@@ -1,0 +1,137 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="AWPQ_SRV">
+			<EntityType Name="Meisterei" sap:label="Meisterei" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="Id"/>
+				</Key>
+				<Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="MeistereiId" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/>
+				<Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Meisterei" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<NavigationProperty Name="NavMeistereiToTaktpakete" Relationship="AWPQ_SRV.Meisterei2Taktpakete" FromRole="FromRole_Meisterei2Taktpakete"
+					ToRole="ToRole_Meisterei2Taktpakete"/>
+				<NavigationProperty Name="NavMeistereiToArbeitstellen" Relationship="AWPQ_SRV.Meisterei2Arbeitstellen"
+					FromRole="FromRole_Meisterei2Arbeitstellen" ToRole="ToRole_Meisterei2Arbeitstellen"/>
+			</EntityType>
+			<EntityType Name="Arbeitstelle" sap:label="Arbeitstelle">
+				<Key>
+					<PropertyRef Name="Id"/>
+				</Key>
+				<Property Name="Id" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="ArbeitstelleId" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/>
+				<Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Arbeitstelle" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="MeistereiId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="MeistereiId"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+				<NavigationProperty Name="NavArbeitstelle2Taktpakete" Relationship="AWPQ_SRV.Arbeitstelle2Taktpakete"
+					FromRole="FromRole_Arbeitstelle2Taktpakete" ToRole="ToRole_Arbeitstelle2Taktpakete"/>
+			</EntityType>
+			<EntityType Name="Taktpaket" sap:label="Taktpaket">
+				<Key>
+					<PropertyRef Name="Id"/>
+				</Key>
+				<Property Name="Id" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="TaktpaketId" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/>
+				<Property Name="TaktpaketPos" Type="Edm.Int16" Nullable="false" sap:label="Taktpaketposition" sap:sortable="true"/>
+				<Property Name="AI" Type="Edm.Decimal" Precision="2" sap:unicode="false" sap:label="AI"/>
+				<Property Name="Ergonomie" Type="Edm.Decimal" Precision="2" sap:unicode="false" sap:label="Ergonomie"/>
+				<Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Taktpaketname" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="MeistereiId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="MeistereiId"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+				<NavigationProperty Name="NavTaktpaket2Arbeitstelle" Relationship="AWPQ_SRV.Taktpaket2Arbeitstellen"
+					FromRole="FromRole_Taktpaket2Arbeitstellen" ToRole="ToRole_Taktpaket2Arbeitstellen"/>
+			</EntityType>
+			<EntityType Name="ArbeitstelleImTaktpaket" sap:label="Arbeitstellen im Taktpaket">
+				<Key>
+					<PropertyRef Name="TaktpaketId"/>
+					<PropertyRef Name="ArbeitstelleId"/>
+				</Key>
+				<Property Name="TaktpaketId" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Taktpaket Id" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/>
+				<Property Name="ArbeitstelleId" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Arbeitstelle Id" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/>
+				<Property Name="ImTaktpaket" Type="Edm.Boolean" Nullable="false" sap:label="Im Taktpaket enthalten" sap:sortable="true"/>
+			</EntityType>
+			<Association Name="Meisterei2Arbeitstellen" sap:content-version="1">
+				<End Type="AWPQ_SRV.Meisterei" Multiplicity="1" Role="FromRole_Meisterei2Arbeitstellen"/>
+				<End Type="AWPQ_SRV.Arbeitstelle" Multiplicity="*" Role="ToRole_Meisterei2Arbeitstellen"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Meisterei2Arbeitstellen">
+						<PropertyRef Name="Id"/>
+					</Principal>
+					<Dependent Role="ToRole_Meisterei2Arbeitstellen">
+						<PropertyRef Name="MeistereiId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Meisterei2Taktpakete" sap:content-version="1">
+				<End Type="AWPQ_SRV.Meisterei" Multiplicity="1" Role="FromRole_Meisterei2Taktpakete"/>
+				<End Type="AWPQ_SRV.Taktpaket" Multiplicity="*" Role="ToRole_Meisterei2Taktpakete"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Meisterei2Taktpakete">
+						<PropertyRef Name="Id"/>
+					</Principal>
+					<Dependent Role="ToRole_Meisterei2Taktpakete">
+						<PropertyRef Name="MeistereiId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Arbeitstelle2Taktpakete" sap:content-version="1">
+				<End Type="AWPQ_SRV.Arbeitstelle" Multiplicity="1" Role="FromRole_Arbeitstelle2Taktpakete"/>
+				<End Type="AWPQ_SRV.ArbeitstelleImTaktpaket" Multiplicity="*" Role="ToRole_Arbeitstelle2Taktpakete"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Arbeitstelle2Taktpakete">
+						<PropertyRef Name="Id"/>
+					</Principal>
+					<Dependent Role="ToRole_Arbeitstelle2Taktpakete">
+						<PropertyRef Name="ArbeitstelleId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Taktpaket2Arbeitstellen" sap:content-version="1">
+				<End Type="AWPQ_SRV.Taktpaket" Multiplicity="1" Role="FromRole_Taktpaket2Arbeitstellen"/>
+				<End Type="AWPQ_SRV.ArbeitstelleImTaktpaket" Multiplicity="*" Role="ToRole_Taktpaket2Arbeitstellen"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_Taktpaket2Arbeitstellen">
+						<PropertyRef Name="Id"/>
+					</Principal>
+					<Dependent Role="ToRole_Taktpaket2Arbeitstellen">
+						<PropertyRef Name="TaktpaketId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="AWPQ_SRV_EC" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+				<EntitySet Name="Meistereien" EntityType="AWPQ_SRV.Meisterei" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+					sap:searchable="true" sap:addressable="true" sap:requires-filter="false" sap:content-version="1"/>
+				<EntitySet Name="Arbeitstellen" EntityType="AWPQ_SRV.Arbeitstelle" sap:searchable="true" sap:addressable="false" sap:requires-filter="true"
+					sap:content-version="1"/>
+				<EntitySet Name="Taktpakete" EntityType="AWPQ_SRV.Taktpaket" sap:searchable="true" sap:addressable="true" sap:requires-filter="false"
+					sap:content-version="1"/>
+				<EntitySet Name="ArbeitstellenImTaktpaket" EntityType="AWPQ_SRV.ArbeitstelleImTaktpaket" sap:searchable="true" sap:addressable="true"
+					sap:requires-filter="false" sap:content-version="1"/>
+				<AssociationSet Name="Meistereien2Arbeitstellen" Association="AWPQ_SRV.Meisterei2Arbeitstellen" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="Meistereien" Role="FromRole_Meisterei2Arbeitstellen"/>
+					<End EntitySet="Arbeitstellen" Role="ToRole_Meisterei2Arbeitstellen"/>
+				</AssociationSet>
+				<AssociationSet Name="Meistereien2Taktpakete" Association="AWPQ_SRV.Meisterei2Taktpakete" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="Meistereien" Role="FromRole_Meisterei2Taktpakete"/>
+					<End EntitySet="Taktpakete" Role="ToRole_Meisterei2Taktpakete"/>
+				</AssociationSet>
+				<AssociationSet Name="Arbeitstellen2Taktpakete" Association="AWPQ_SRV.Arbeitstelle2Taktpakete" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="Arbeitstellen" Role="FromRole_Arbeitstelle2Taktpakete"/>
+					<End EntitySet="ArbeitstellenImTaktpaket" Role="ToRole_Arbeitstelle2Taktpakete"/>
+				</AssociationSet>
+				<AssociationSet Name="Taktpakete2Arbeitstellen" Association="AWPQ_SRV.Taktpaket2Arbeitstellen" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="Taktpakete" Role="FromRole_Taktpaket2Arbeitstellen"/>
+					<End EntitySet="ArbeitstellenImTaktpaket" Role="ToRole_Taktpaket2Arbeitstellen"/>
+				</AssociationSet>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
