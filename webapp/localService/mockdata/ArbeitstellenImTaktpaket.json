@@ -1,0 +1,256 @@
+[{
+	"TaktpaketId": 1,
+	"ArbeitstelleId": 1
+}, {
+	"ArbeitstelleId": 2,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 3,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 4,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 5,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 6,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 7,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 8,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 9,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 10,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 11,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 12,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 13,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 14,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 15,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 16,
+	"TaktpaketId": 1
+}, {
+	"ArbeitstelleId": 17,
+	"TaktpaketId": 1
+}, {
+	"TaktpaketId": 2,
+	"ArbeitstelleId": 1
+}, {
+	"ArbeitstelleId": 2,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 3,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 4,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 5,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 6,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 7,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 8,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 9,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 10,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 11,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 12,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 13,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 14,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 15,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 16,
+	"TaktpaketId": 2
+}, {
+	"ArbeitstelleId": 17,
+	"TaktpaketId": 2
+}, {
+	"TaktpaketId": 3,
+	"ArbeitstelleId": 1
+}, {
+	"ArbeitstelleId": 2,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 3,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 4,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 5,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 6,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 7,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 8,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 9,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 10,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 11,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 12,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 13,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 14,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 15,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 16,
+	"TaktpaketId": 3
+}, {
+	"ArbeitstelleId": 17,
+	"TaktpaketId": 3
+}, {
+	"TaktpaketId": 4,
+	"ArbeitstelleId": 1
+}, {
+	"ArbeitstelleId": 2,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 3,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 4,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 5,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 6,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 7,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 8,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 9,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 10,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 11,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 12,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 13,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 14,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 15,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 16,
+	"TaktpaketId": 4
+}, {
+	"ArbeitstelleId": 17,
+	"TaktpaketId": 4
+}, {
+	"TaktpaketId": 5,
+	"ArbeitstelleId": 1
+}, {
+	"ArbeitstelleId": 2,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 3,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 4,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 5,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 6,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 7,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 8,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 9,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 10,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 11,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 12,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 13,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 14,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 15,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 16,
+	"TaktpaketId": 5
+}, {
+	"ArbeitstelleId": 17,
+	"TaktpaketId": 5
+}]

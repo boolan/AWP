@@ -1,0 +1,137 @@
+[{
+	"Id": 1,
+	"Name": "Abstandhalter links",
+	"MeistereiId": "1"
+}, {
+	"Id": 2,
+	"Name": "Abstandhalter rechts",
+	"MeistereiId": "1"
+}, {
+	"Id": 3,
+	"Name": "Sequenz FS, HS, F8x, SS",
+	"MeistereiId": "1"
+}, {
+	"Id": 4,
+	"Name": "Heckscheibe",
+	"MeistereiId": "1"
+}, {
+	"Id": 5,
+	"Name": "Seitenscheibeneinbau",
+	"MeistereiId": "1"
+}, {
+	"Id": 6,
+	"Name": "Frontscheibenvorbereitung L7",
+	"MeistereiId": "1"
+}, {
+	"Id": 7,
+	"Name": "Frontscheibenvorbereitung LU",
+	"MeistereiId": "1"
+}, {
+	"Id": 8,
+	"Name": "Frontscheibe in Anlage",
+	"MeistereiId": "1"
+}, {
+	"Id": 9,
+	"Name": "Scheiben einrichten links",
+	"MeistereiId": "1"
+}, {
+	"Name": "Scheiben einrichten rechts",
+	"Id": 10,
+	"MeistereiId": "1"
+}, {
+	"Id": 11,
+	"Name": "Ersatzfertigung",
+	"MeistereiId": "1"
+}, {
+	"Id": 12,
+	"Name": "Rohrbiege 1,2,3",
+	"MeistereiId": "1"
+}, {
+	"Name": "Rohrbiege Dengler",
+	"Id": 13,
+	"MeistereiId": "1"
+}, {
+	"Id": 14,
+	"Name": "Stanze, Wuerfel, Sequenzierung",
+	"MeistereiId": "1"
+}, {
+	"Id": 15,
+	"Name": "Carset 1",
+	"MeistereiId": "1"
+}, {
+	"Id": 16,
+	"Name": "Carset 2",
+	"MeistereiId": "1"
+}, {
+	"Id": 17,
+	"Name": "CKD Fertigung Himmel",
+	"MeistereiId": "1"
+}, {
+	"Id": 18,
+	"Name": "Abstandhalter links",
+	"MeistereiId": "2"
+}, {
+	"Id": 19,
+	"Name": "Abstandhalter rechts",
+	"MeistereiId": "2"
+}, {
+	"Id": 20,
+	"Name": "Sequenz FS, HS, F8x, SS",
+	"MeistereiId": "2"
+}, {
+	"Id": 21,
+	"Name": "Heckscheibe",
+	"MeistereiId": "2"
+}, {
+	"Id": 22,
+	"Name": "Seitenscheibeneinbau",
+	"MeistereiId": "2"
+}, {
+	"Id": 23,
+	"Name": "Frontscheibenvorbereitung L7",
+	"MeistereiId": "2"
+}, {
+	"Id": 24,
+	"Name": "Frontscheibenvorbereitung LU",
+	"MeistereiId": "2"
+}, {
+	"Id": 25,
+	"Name": "Frontscheibe in Anlage",
+	"MeistereiId": "2"
+}, {
+	"Id": 26,
+	"Name": "Scheiben einrichten links",
+	"MeistereiId": "2"
+}, {
+	"Name": "Scheiben einrichten rechts",
+	"Id": 27,
+	"MeistereiId": "2"
+}, {
+	"Id": 28,
+	"Name": "Ersatzfertigung",
+	"MeistereiId": "2"
+}, {
+	"Id": 29,
+	"Name": "Rohrbiege 1,2,3",
+	"MeistereiId": "2"
+}, {
+	"Name": "Rohrbiege Dengler",
+	"Id": 30,
+	"MeistereiId": "2"
+}, {
+	"Id": 31,
+	"Name": "Stanze, Wuerfel, Sequenzierung",
+	"MeistereiId": "2"
+}, {
+	"Id": 32,
+	"Name": "Carset 1",
+	"MeistereiId": "2"
+}, {
+	"Id": 33,
+	"Name": "Carset 2",
+	"MeistereiId": "2"
+}, {
+	"Id": 34,
+	"Name": "CKD Fertigung Himmel",
+	"MeistereiId": "2"
+}]
