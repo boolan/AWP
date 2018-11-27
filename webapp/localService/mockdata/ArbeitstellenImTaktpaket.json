@@ -15,19 +15,22 @@
 	"TaktpaketId": 1
 }, {
 	"ArbeitstelleId": 6,
-	"TaktpaketId": 1
+	"TaktpaketId": 1,
+	"ImTaktpaket": true
 }, {
 	"ArbeitstelleId": 7,
 	"TaktpaketId": 1
 }, {
 	"ArbeitstelleId": 8,
-	"TaktpaketId": 1
+	"TaktpaketId": 1,
+	"ImTaktpaket": true
 }, {
 	"ArbeitstelleId": 9,
 	"TaktpaketId": 1
 }, {
 	"ArbeitstelleId": 10,
-	"TaktpaketId": 1
+	"TaktpaketId": 1,
+	"ImTaktpaket": true
 }, {
 	"ArbeitstelleId": 11,
 	"TaktpaketId": 1
